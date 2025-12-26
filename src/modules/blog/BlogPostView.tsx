@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Markdown from "react-markdown";
 import { ContentBlock } from "./BlogData";
 
 type BlogPostViewProps = {
@@ -12,7 +13,25 @@ type BlogPostViewProps = {
 const renderBlock = (block: ContentBlock, index: number) => {
     switch (block.type) {
         case "paragraph":
-            return <p key={index} className="text-lg leading-relaxed text-white/80 mb-6 font-inter">{block.content}</p>;
+            return (
+                <div key={index} className="mb-6 font-inter text-lg leading-relaxed text-white/80">
+                    <Markdown
+                        components={{
+                            a: ({ node, ...props }) => (
+                                <a
+                                    {...props}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline hover:text-white transition-colors"
+                                />
+                            ),
+                            p: ({ node, ...props }) => <p {...props} className="mb-0" />,
+                        }}
+                    >
+                        {block.content}
+                    </Markdown>
+                </div>
+            );
         case "heading":
             const HeadingTag = `h${block.level}` as React.ElementType;
             const sizes = {

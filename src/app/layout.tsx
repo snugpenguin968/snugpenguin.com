@@ -16,6 +16,9 @@ const goldman = Goldman({
 export const metadata: Metadata = {
   title: "SnugPenguin | John Tian",
   description: "Personal website of John Tian (SnugPenguin)",
+  icons: {
+    icon: "/logo-square.png",
+  },
 };
 
 export default function RootLayout({

@@ -1,20 +1,24 @@
 export const useHeroModel = () => {
     return {
         title: "John Tian",
-        subtitle: "// Developer & (placeholder) @ Rice University",
+        subtitle: "// 1x engineer @ Rice University",
         scrollText: "Scroll Down",
         about: {
             title: "Hi, I'm John!",
             bio: [
-                "I'm a developer and student at Rice University. (Placeholder for bio text).",
-                "(More placeholder text about interests, skills, and background).",
-                "(Another paragraph).",
+                "I'm a computer science student at Rice University. ",
+                "I'm broadly interested in backend development, infrastructure, and systems.",
+                "I also love food 😋.",
             ],
-            photoPlaceholder: "Photo Placeholder",
+            photoSrc: "/me.png",
         },
         experiencesLink: {
-            label: "View Experiences",
+            label: "Check out my experiences",
             href: "/experiences",
+        },
+        blogLink: {
+            label: "Read my blog",
+            href: "/blog",
         },
     };
 };

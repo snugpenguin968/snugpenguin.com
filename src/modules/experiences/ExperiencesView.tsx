@@ -46,15 +46,19 @@ const ExperienceCard = ({ item }: { item: ExperienceItem }) => (
             </div>
 
             {/* Right Image Placeholder */}
-            <div className="w-full md:w-[40%] min-h-[300px] md:min-h-full bg-black/20 relative overflow-hidden">
+            {/* Right Image Placeholder */}
+            <div className="w-full md:w-[40%] bg-black/20 relative flex items-center justify-center p-10">
                 <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0a192f]/80 z-10 md:block hidden" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f] to-transparent z-10 md:hidden block" />
 
-                {/* Mockup Placeholder */}
-                <div className="absolute inset-0 flex items-center justify-center p-10">
-                    <div className="w-full h-full bg-white/5 rounded-xl border border-white/10 flex items-center justify-center text-white/20 transform rotate-[-5deg] group-hover:rotate-0 transition-transform duration-500">
-                        Image Placeholder
-                    </div>
+                <div className="relative w-full bg-white/5 rounded-xl border border-white/10 flex items-center justify-center overflow-hidden transform rotate-[-5deg] group-hover:rotate-0 transition-transform duration-500 shadow-2xl">
+                    {item.image ? (
+                        <img src={item.image} alt={item.title} className="w-full h-auto object-cover" />
+                    ) : (
+                        <div className="h-48 flex items-center justify-center">
+                            <span className="text-white/20">Image Placeholder</span>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

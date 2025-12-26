@@ -8,15 +8,19 @@ type HeroViewProps = {
     about: {
         title: string;
         bio: string[];
-        photoPlaceholder: string;
+        photoSrc: string;
     };
     experiencesLink: {
         label: string;
         href: string;
     };
+    blogLink: {
+        label: string;
+        href: string;
+    };
 };
 
-export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }: HeroViewProps) => {
+export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink, blogLink }: HeroViewProps) => {
     return (
         <>
             <section
@@ -59,9 +63,7 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }
             <section id="about" className="py-20 px-5 md:px-10 max-w-6xl mx-auto relative z-10">
                 <div className="flex flex-col md:flex-row gap-10 items-center">
                     <div className="w-full md:w-1/2 aspect-square bg-white/10 rounded-2xl overflow-hidden relative border-2 border-white/20">
-                        <div className="w-full h-full flex items-center justify-center text-white/30">
-                            {about.photoPlaceholder}
-                        </div>
+                        <img src={about.photoSrc} alt={about.title} className="w-full h-full object-cover" />
                     </div>
                     <div className="w-full md:w-1/2 space-y-8">
                         <h2 className="font-goldman text-4xl md:text-6xl">{about.title}</h2>
@@ -71,9 +73,20 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }
                             ))}
                         </div>
 
-                        <Link href={experiencesLink.href} className="inline-block px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-white font-goldman tracking-widest uppercase transition-all duration-300">
-                            {experiencesLink.label}
-                        </Link>
+                        <div className="flex flex-col gap-4 items-start">
+                            <Link href={experiencesLink.href} className="group flex items-center gap-2 font-goldman text-xl text-white/80 hover:text-white transition-colors">
+                                <span>{experiencesLink.label}</span>
+                                <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </Link>
+                            <Link href={blogLink.href} className="group flex items-center gap-2 font-goldman text-xl text-white/80 hover:text-white transition-colors">
+                                <span>{blogLink.label}</span>
+                                <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>

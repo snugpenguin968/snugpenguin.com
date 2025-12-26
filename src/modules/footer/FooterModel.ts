@@ -1,6 +1,6 @@
 export const useFooterModel = () => {
     return {
-        contactTitle: "Let's get\nin touch!",
+        contactTitle: "Let's get in touch!",
         github: {
             label: "Github",
             username: "@snugpenguin968",
@@ -26,6 +26,6 @@ export const useFooterModel = () => {
             url: "https://www.linkedin.com/in/cindy-tso-184718217/",
         },
         copyright: "John Tian © 2025",
-        techStack: "Custom coded using HTML/CSS/JS",
+        techStack: "Developed with TypeScript, Next.js, and Tailwind CSS",
     };
 };
