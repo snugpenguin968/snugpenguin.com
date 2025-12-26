@@ -4,7 +4,6 @@ import Link from "next/link";
 type HeroViewProps = {
     title: string;
     subtitle: string;
-    quote: string;
     scrollText: string;
     about: {
         title: string;
@@ -17,40 +16,33 @@ type HeroViewProps = {
     };
 };
 
-export const HeroView = ({ title, subtitle, quote, scrollText, about, experiencesLink }: HeroViewProps) => {
+export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }: HeroViewProps) => {
     return (
         <>
-            <section className="min-h-screen relative overflow-hidden flex flex-col justify-center pt-32 pb-20">
+            <section className="min-h-screen relative overflow-hidden flex flex-col justify-center pt-32 pb-32">
                 <div className="max-w-[1400px] mx-auto w-full px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center relative z-10">
 
                     {/* Left Column: Title */}
-                    <div className="md:col-span-4 text-left md:text-right order-2 md:order-1">
-                        <h1 className="font-goldman text-5xl md:text-7xl mb-2 uppercase tracking-widest bg-gradient-to-b from-white to-ice-light bg-clip-text text-transparent drop-shadow-lg leading-tight">
+                    <div className="md:col-span-5 text-left order-2 md:order-1">
+                        <h1 className="font-goldman text-5xl md:text-8xl mb-4 bg-gradient-to-b from-white to-ice-light bg-clip-text text-transparent drop-shadow-lg leading-none whitespace-nowrap">
                             {title}
                         </h1>
-                        <p className="text-sm md:text-base text-ice-light font-light opacity-80">
+                        <p className="text-sm md:text-lg text-ice-light font-light opacity-80">
                             {subtitle}
                         </p>
                     </div>
 
                     {/* Center Column: Iceberg */}
-                    <div className="md:col-span-4 flex flex-col items-center justify-center order-1 md:order-2 relative">
+                    <div className="md:col-span-7 flex flex-col items-center justify-center order-1 md:order-2 relative">
                         {/* Main Iceberg */}
-                        <div className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex items-center justify-center text-white/50 transform rotate-45 mb-4 z-10 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+                        <div className="w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex items-center justify-center text-white/50 transform rotate-45 mb-10 z-10 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
                             Iceberg Asset
                         </div>
 
                         {/* Reflection Placeholder */}
-                        <div className="absolute top-[80%] w-[250px] h-[250px] md:w-[350px] md:h-[350px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none">
+                        <div className="absolute top-[75%] w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none">
                             Reflection
                         </div>
-                    </div>
-
-                    {/* Right Column: Quote */}
-                    <div className="md:col-span-4 text-left order-3">
-                        <p className="text-sm md:text-lg text-white/60 font-medium italic max-w-xs leading-relaxed">
-                            {quote}
-                        </p>
                     </div>
                 </div>
 

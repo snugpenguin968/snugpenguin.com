@@ -2,7 +2,6 @@ export const useHeroModel = () => {
     return {
         title: "John Tian",
         subtitle: "// Developer & (placeholder) @ Rice University",
-        quote: "\"Big fan of soccer, free food, sleeveless vests, Perplexity for generating this, and Instagram reels\".",
         scrollText: "Scroll Down",
         about: {
             title: "Hi, I'm John!",
