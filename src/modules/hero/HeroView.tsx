@@ -4,6 +4,7 @@ import Link from "next/link";
 type HeroViewProps = {
     title: string;
     subtitle: string;
+    quote: string;
     scrollText: string;
     about: {
         title: string;
@@ -16,33 +17,40 @@ type HeroViewProps = {
     };
 };
 
-export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }: HeroViewProps) => {
+export const HeroView = ({ title, subtitle, quote, scrollText, about, experiencesLink }: HeroViewProps) => {
     return (
         <>
-            <section className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center pt-32 pb-20">
-                <div className="absolute top-32 left-10 md:left-20 z-10 text-left">
-                    <h1 className="font-goldman text-6xl md:text-8xl mb-2 uppercase tracking-widest bg-gradient-to-b from-white to-ice-light bg-clip-text text-transparent drop-shadow-lg">
-                        {title.split(" ").map((word, i) => (
-                            <React.Fragment key={i}>
-                                {word}
-                                {i < title.split(" ").length - 1 && <br />}
-                            </React.Fragment>
-                        ))}
-                    </h1>
-                    <p className="text-lg md:text-xl text-ice-light font-light">
-                        {subtitle}
-                    </p>
-                </div>
+            <section className="min-h-screen relative overflow-hidden flex flex-col justify-center pt-32 pb-20">
+                <div className="max-w-[1400px] mx-auto w-full px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center relative z-10">
 
-                <div className="relative z-0 flex flex-col items-center mt-20 md:mt-0">
-                    {/* Main Iceberg */}
-                    <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex items-center justify-center text-white/50 transform rotate-45 mb-4">
-                        Iceberg Asset
+                    {/* Left Column: Title */}
+                    <div className="md:col-span-4 text-left md:text-right order-2 md:order-1">
+                        <h1 className="font-goldman text-5xl md:text-7xl mb-2 uppercase tracking-widest bg-gradient-to-b from-white to-ice-light bg-clip-text text-transparent drop-shadow-lg leading-tight">
+                            {title}
+                        </h1>
+                        <p className="text-sm md:text-base text-ice-light font-light opacity-80">
+                            {subtitle}
+                        </p>
                     </div>
 
-                    {/* Reflection Placeholder */}
-                    <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-50 mask-image-gradient">
-                        Reflection
+                    {/* Center Column: Iceberg */}
+                    <div className="md:col-span-4 flex flex-col items-center justify-center order-1 md:order-2 relative">
+                        {/* Main Iceberg */}
+                        <div className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex items-center justify-center text-white/50 transform rotate-45 mb-4 z-10 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+                            Iceberg Asset
+                        </div>
+
+                        {/* Reflection Placeholder */}
+                        <div className="absolute top-[80%] w-[250px] h-[250px] md:w-[350px] md:h-[350px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none">
+                            Reflection
+                        </div>
+                    </div>
+
+                    {/* Right Column: Quote */}
+                    <div className="md:col-span-4 text-left order-3">
+                        <p className="text-sm md:text-lg text-white/60 font-medium italic max-w-xs leading-relaxed">
+                            {quote}
+                        </p>
                     </div>
                 </div>
 
