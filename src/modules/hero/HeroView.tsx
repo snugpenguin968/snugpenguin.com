@@ -28,7 +28,6 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink, 
             >
                 <div className="max-w-[1400px] mx-auto w-full px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center relative z-10">
 
-                    {/* Left Column: Title */}
                     <div className="md:col-span-5 text-center md:text-left order-2 md:order-1 mt-10 md:mt-[-200px]">
                         <h1 className="font-goldman text-5xl md:text-8xl mb-4 text-white drop-shadow-lg leading-none whitespace-nowrap">
                             {title}
@@ -38,16 +37,12 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink, 
                         </p>
                     </div>
 
-                    {/* Center Column: Iceberg */}
                     <div className="md:col-span-7 flex flex-col items-center justify-center order-1 md:order-2 relative w-full">
-                        {/* Main Iceberg & Penguins */}
                         <div className="relative w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[450px] md:h-[450px] mb-10 z-10 top-10 mx-auto">
                             <img src="/iceberg.png" alt="Iceberg" className="w-full h-full object-contain" />
-                            {/* Layered Penguins */}
                             <img src="/penguins.png" alt="Penguins" className="absolute top-4 left-0 w-full h-full object-contain z-20 pointer-events-none" />
                         </div>
 
-                        {/* Reflection */}
                         <div className="absolute top-[75%] w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[450px] md:h-[450px] flex items-center justify-center opacity-30 mask-image-gradient pointer-events-none -z-10 mx-auto">
                             <img src="/reflection.png" alt="Reflection" className="w-full h-full object-contain" />
                         </div>
@@ -59,7 +54,6 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink, 
                 </div>
             </section>
 
-            {/* About Section Integrated */}
             <section id="about" className="py-20 px-5 md:px-10 max-w-6xl mx-auto relative z-10">
                 <div className="flex flex-col md:flex-row gap-10 items-center">
                     <div className="w-full md:w-1/2 aspect-square bg-white/10 rounded-2xl overflow-hidden relative border-2 border-white/20">

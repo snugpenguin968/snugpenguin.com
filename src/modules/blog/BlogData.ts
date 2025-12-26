@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
         tags: ["PORTFOLIO", "DESIGN"],
         content: [
             { type: 'heading', level: 1, content: "Overview" },
-            { type: 'paragraph', content: "I finally made a personal website." },
+            { type: 'paragraph', content: "I finally made a personal website!" },
             { type: 'heading', level: 2, content: "Some Notes" },
             { type: 'paragraph', content: "I decided to use a Model-View-Adapter (MVA) architecture for this project because of COMP 318. This structure makes the codebase incredibly modular and easy to test." },
             //             {

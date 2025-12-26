@@ -8,7 +8,6 @@ export const HomeAdapter = () => {
         <HomeView
             header={<HeaderAdapter />}
             hero={<HeroAdapter />}
-            projects={null} // Removed projects section
             footer={<FooterAdapter />}
         />
     );

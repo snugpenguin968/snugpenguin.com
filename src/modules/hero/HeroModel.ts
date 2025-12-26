@@ -7,7 +7,7 @@ export const useHeroModel = () => {
             title: "Hi, I'm John!",
             bio: [
                 "I'm a computer science student at Rice University. ",
-                "I'm broadly interested in backend development, infrastructure, and systems.",
+                "I'm broadly interested in backend development, high-performance infrastructure, and systems.",
                 "I also love food 😋.",
             ],
             photoSrc: "/me.png",

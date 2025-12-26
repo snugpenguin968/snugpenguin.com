@@ -26,7 +26,6 @@ export const HeaderView = ({ logoText, links }: HeaderViewProps) => {
                     <span>{logoText}</span>
                 </Link>
 
-                {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-8 lg:gap-10">
                     {links.map((link, index) => (
                         <Link
@@ -39,7 +38,6 @@ export const HeaderView = ({ logoText, links }: HeaderViewProps) => {
                     ))}
                 </nav>
 
-                {/* Mobile Menu Toggle */}
                 <button
                     className="md:hidden text-white p-2"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -52,7 +50,6 @@ export const HeaderView = ({ logoText, links }: HeaderViewProps) => {
                 </button>
             </div>
 
-            {/* Mobile Nav */}
             {isMenuOpen && (
                 <nav className="md:hidden flex flex-col gap-6 w-full items-center pb-6 animate-in fade-in slide-in-from-top-2">
                     {links.map((link, index) => (
