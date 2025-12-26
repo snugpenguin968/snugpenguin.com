@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-blue: #0066B2;
+  --color-darker-blue: #004C8C;
+  --color-ice-light: #D6EAF8;
+  --color-ice-shadow: #85C1E9;
+  --color-text-white: #FFFFFF;
+  --color-text-muted: #CBD5E1;
+
+  --font-inter: var(--font-inter);
+  --font-goldman: var(--font-goldman);
+
+  --background-image-gradient-main: linear-gradient(180deg, #87CEEB 0%, #0066B2 30%, #02101f 60%, #004C8C 85%, #D6EAF8 100%);
+}
+
+@layer base {
+
+  html,
+  body {
+    @apply min-h-screen overflow-x-hidden max-w-[100vw];
+  }
+
+  body {
+    @apply text-text-white bg-gradient-main bg-fixed font-inter antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-goldman;
+  }
+}
