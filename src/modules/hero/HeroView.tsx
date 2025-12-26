@@ -25,7 +25,7 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }
                 <div className="max-w-[1400px] mx-auto w-full px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center relative z-10">
 
                     {/* Left Column: Title */}
-                    <div className="md:col-span-5 text-left order-2 md:order-1 mt-[-200px]">
+                    <div className="md:col-span-5 text-center md:text-left order-2 md:order-1 mt-10 md:mt-[-200px]">
                         <h1 className="font-goldman text-5xl md:text-8xl mb-4 text-white drop-shadow-lg leading-none whitespace-nowrap">
                             {title}
                         </h1>
@@ -35,14 +35,15 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }
                     </div>
 
                     {/* Center Column: Iceberg */}
-                    <div className="md:col-span-7 flex flex-col items-center justify-center order-1 md:order-2 relative">
+                    <div className="md:col-span-7 flex flex-col items-center justify-center order-1 md:order-2 relative w-full">
                         {/* Main Iceberg */}
-                        <div className="w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex items-center justify-center text-white/50 transform rotate-45 mb-10 z-10 shadow-[0_0_50px_rgba(255,255,255,0.1)] relative top-10">
+                        {/* Responsive sizing: smaller on mobile */}
+                        <div className="w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[450px] md:h-[450px] bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex items-center justify-center text-white/50 transform rotate-45 mb-10 z-10 shadow-[0_0_50px_rgba(255,255,255,0.1)] relative top-10 mx-auto">
                             Iceberg Asset
                         </div>
 
                         {/* Reflection Placeholder */}
-                        <div className="absolute top-[75%] w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none -z-10">
+                        <div className="absolute top-[75%] w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[450px] md:h-[450px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none -z-10 mx-auto">
                             Reflection
                         </div>
                     </div>
