@@ -11,10 +11,10 @@ export const useFooterModel = () => {
             address: "johntian2014@gmail.com",
             url: "mailto:johntian2014@gmail.com",
         },
-        discord: {
-            label: "Discord",
-            username: "@snugpenguin968",
-            url: "https://discord.com/users/snugpenguin968", // Assuming standard discord user link format or just a placeholder if not linkable directly
+        beli: {
+            label: "Beli",
+            username: "@snugpenguin",
+            url: "https://beliapp.co",
         },
         linkedin: {
             label: "LinkedIn",
