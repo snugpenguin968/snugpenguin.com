@@ -118,6 +118,7 @@ export const useExperiencesModel = () => {
             courses: [
                 { name: "Data Structures and Algorithms" },
                 { name: "Object-Oriented Program Design" },
+                { name: "Concurrent Program Design" },
                 { name: "Computer Systems" },
                 { name: "Computer Networks" },
                 { name: "Database Systems" },
@@ -126,6 +127,7 @@ export const useExperiencesModel = () => {
                 { name: "Programming Languages and Compilers" },
                 { name: "Machine Learning" },
                 { name: "Probabilistic Data Structures and Algorithms" },
+                { name: "IoT Programming and Analysis" },
                 { name: "Operations Research and Optimization" },
                 { name: "Honors Linear Algebra" },
                 { name: "Honors Multivariable Calculus" }
