@@ -14,8 +14,8 @@ const goldman = Goldman({
 });
 
 export const metadata: Metadata = {
-  title: "SnugPenguin | John Tian",
-  description: "Personal website of John Tian (SnugPenguin)",
+  title: "John Tian",
+  description: "Personal website of John Tian",
   icons: {
     icon: "/logo-square.png",
   },
