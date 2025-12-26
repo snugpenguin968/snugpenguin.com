@@ -110,9 +110,9 @@ export const FooterView = ({ contactTitle, github, email, discord, linkedin, cop
                 </div>
             </div>
 
-            {/* Bottom Iceberg with Jagged Ring Effect */}
-            <div className="absolute bottom-0 right-0 w-[200px] h-[160px] md:w-[600px] md:h-[500px] z-0 pointer-events-none opacity-30 md:opacity-50">
-                <div className="w-full h-full bg-gradient-to-t from-white/10 to-transparent" style={{ clipPath: 'polygon(20% 100%, 40% 20%, 60% 80%, 80% 10%, 100% 100%)' }} />
+            {/* Bottom Iceberg */}
+            <div className="absolute bottom-0 right-0 w-[200px] md:w-[600px] z-0 pointer-events-none opacity-50">
+                <img src="/bottom.png" alt="Bottom Iceberg" className="w-full h-auto object-contain object-bottom" />
             </div>
         </footer>
     );
