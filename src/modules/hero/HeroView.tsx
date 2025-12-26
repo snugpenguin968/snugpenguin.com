@@ -37,7 +37,7 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink, 
                         </p>
                     </div>
 
-                    <div className="md:col-span-7 flex flex-col items-center justify-center order-1 md:order-2 relative w-full">
+                    <div className="md:col-span-7 flex flex-col items-center justify-center order-1 md:order-2 relative w-full mt-20 md:mt-0">
                         <div className="relative w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[450px] md:h-[450px] mb-10 z-10 top-10 mx-auto">
                             <img src="/iceberg.png" alt="Iceberg" className="w-full h-full object-contain" />
                             <img src="/penguins.png" alt="Penguins" className="absolute top-4 left-0 w-full h-full object-contain z-20 pointer-events-none" />
