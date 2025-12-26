@@ -19,15 +19,17 @@ type HeroViewProps = {
 export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }: HeroViewProps) => {
     return (
         <>
-            <section className="min-h-screen relative flex flex-col justify-center pt-32 pb-64">
+            <section
+                className="min-h-screen relative flex flex-col justify-center pt-32 pb-64"
+            >
                 <div className="max-w-[1400px] mx-auto w-full px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center relative z-10">
 
                     {/* Left Column: Title */}
-                    <div className="md:col-span-5 text-left order-2 md:order-1">
-                        <h1 className="font-goldman text-5xl md:text-8xl mb-4 bg-gradient-to-b from-white to-ice-light bg-clip-text text-transparent drop-shadow-lg leading-none whitespace-nowrap">
+                    <div className="md:col-span-5 text-left order-2 md:order-1 mt-[-200px]">
+                        <h1 className="font-goldman text-5xl md:text-8xl mb-4 text-white drop-shadow-lg leading-none whitespace-nowrap">
                             {title}
                         </h1>
-                        <p className="text-sm md:text-lg text-ice-light font-light opacity-80">
+                        <p className="text-sm md:text-lg text-ice-light font-medium opacity-90">
                             {subtitle}
                         </p>
                     </div>
@@ -35,12 +37,12 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }
                     {/* Center Column: Iceberg */}
                     <div className="md:col-span-7 flex flex-col items-center justify-center order-1 md:order-2 relative">
                         {/* Main Iceberg */}
-                        <div className="w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex items-center justify-center text-white/50 transform rotate-45 mb-10 z-10 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+                        <div className="w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl flex items-center justify-center text-white/50 transform rotate-45 mb-10 z-10 shadow-[0_0_50px_rgba(255,255,255,0.1)] relative top-10">
                             Iceberg Asset
                         </div>
 
                         {/* Reflection Placeholder */}
-                        <div className="absolute top-[60%] w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none -z-10">
+                        <div className="absolute top-[75%] w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none -z-10">
                             Reflection
                         </div>
                     </div>

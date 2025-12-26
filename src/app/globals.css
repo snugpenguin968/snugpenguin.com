@@ -11,7 +11,7 @@
   --font-inter: var(--font-inter);
   --font-goldman: var(--font-goldman);
 
-  --background-image-gradient-main: linear-gradient(180deg, #87CEEB 0%, #0066B2 30%, #02101f 60%, #004C8C 85%, #D6EAF8 100%);
+  --background-image-gradient-main: linear-gradient(180deg, #02101f 0%, #001829 100%);
 }
 
 @layer base {
