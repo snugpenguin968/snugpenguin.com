@@ -29,7 +29,7 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }
                         <h1 className="font-goldman text-5xl md:text-8xl mb-4 text-white drop-shadow-lg leading-none whitespace-nowrap">
                             {title}
                         </h1>
-                        <p className="text-sm md:text-lg text-ice-light font-medium opacity-90">
+                        <p className="text-sm md:text-lg text-white font-medium opacity-90 drop-shadow-md">
                             {subtitle}
                         </p>
                     </div>

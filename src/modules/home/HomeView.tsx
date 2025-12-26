@@ -12,10 +12,10 @@ export const HomeView = ({ header, hero, projects, footer }: HomeViewProps) => {
         <div
             className="min-h-screen font-sans"
             style={{
-                // Sky: #72A5D3 (Darker Start) -> #BEDEEB (Horizon Light)
+                // Sky: #5B8FB3 (Darker Sky) -> #A9C9DB (Darker Horizon)
                 // Horizon at ~15%: sharp transition to #5E86B0 (Surface)
                 // Ocean Depth: #0066B2 (Main) -> #1A2849 (Dark Mix) -> #0B1324 (Deepest)
-                background: "linear-gradient(to bottom, #72A5D3 0%, #BEDEEB 15%, #5E86B0 16%, #0066B2 40%, #1A2849 70%, #0B1324 100%)"
+                background: "linear-gradient(to bottom, #5B8FB3 0%, #A9C9DB 15%, #5E86B0 16%, #0066B2 40%, #1A2849 70%, #0B1324 100%)"
             }}
         >
             {header}

@@ -101,12 +101,10 @@ export const FooterView = ({ contactTitle, github, email, discord, linkedin, cop
 
                 <div className="w-full h-px bg-white/20 my-10"></div>
 
-                <div className="text-xs opacity-60 flex flex-col md:flex-row justify-between gap-4">
-                    <div>
-                        <p>{techStack}</p>
-                        <p>{copyright}</p>
-                    </div>
-                    <a href={credit.url} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                <div className="text-xs opacity-60 flex flex-col gap-1">
+                    <p>{techStack}</p>
+                    <p>{copyright}</p>
+                    <a href={credit.url} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors block mt-1">
                         {credit.label}
                     </a>
                 </div>

@@ -48,7 +48,11 @@ const BlogCard = ({ post }: { post: BlogPostSummary }) => (
 
 export const BlogListView = ({ title, posts }: BlogListViewProps) => {
     return (
-        <div className="min-h-screen pt-32 pb-20 px-5 md:px-10">
+        <div className="min-h-screen pt-32 pb-20 px-5 md:px-10"
+            style={{
+                background: "linear-gradient(to bottom, #0066B2 0%, #2746AE 50%, #0B1324 100%)"
+            }}
+        >
             <div className="max-w-5xl mx-auto">
                 <h1 className="font-goldman text-6xl md:text-8xl mb-20 text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50">
                     {title}

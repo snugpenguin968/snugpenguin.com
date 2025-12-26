@@ -51,7 +51,11 @@ const renderBlock = (block: ContentBlock, index: number) => {
 
 export const BlogPostView = ({ title, date, tags, content }: BlogPostViewProps) => {
     return (
-        <article className="min-h-screen pt-32 pb-20 px-5 md:px-10">
+        <article className="min-h-screen pt-32 pb-20 px-5 md:px-10"
+            style={{
+                background: "linear-gradient(to bottom, #0066B2 0%, #2746AE 50%, #0B1324 100%)"
+            }}
+        >
             <div className="max-w-3xl mx-auto">
                 <Link href="/blog" className="inline-flex items-center text-sm text-white/50 hover:text-white mb-10 transition-colors">
                     ← Back to Blog
