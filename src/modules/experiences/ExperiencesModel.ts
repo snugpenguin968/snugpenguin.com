@@ -1,22 +1,9 @@
-export type ExperienceItem = {
-    id: string;
-    year: string;
-    title: string;
-    description: string;
-    tags: string[];
-    image?: string; // Placeholder for now
-    link?: string;
-};
-
-export type ExperienceSegment = {
-    id: string;
-    title: string;
-    items: ExperienceItem[];
-};
+import { ExperienceSegment } from "./ExperiencesTypes";
 
 export const useExperiencesModel = () => {
     const segments: ExperienceSegment[] = [
         {
+            type: 'standard',
             id: "professional",
             title: "Professional Work",
             items: [
@@ -39,6 +26,7 @@ export const useExperiencesModel = () => {
             ],
         },
         {
+            type: 'standard',
             id: "projects",
             title: "Projects",
             items: [
@@ -53,6 +41,7 @@ export const useExperiencesModel = () => {
             ],
         },
         {
+            type: 'standard',
             id: "university",
             title: "University",
             items: [
@@ -123,6 +112,27 @@ export const useExperiencesModel = () => {
             ],
         },
         {
+            type: 'coursework',
+            id: "coursework",
+            title: "Coursework",
+            courses: [
+                { name: "Data Structures and Algorithms" },
+                { name: "Object-Oriented Program Design" },
+                { name: "Computer Systems" },
+                { name: "Computer Networks" },
+                { name: "Database Systems" },
+                { name: "Operating Systems" },
+                { name: "Deep Learning Systems" },
+                { name: "Programming Languages and Compilers" },
+                { name: "Machine Learning" },
+                { name: "Probabilistic Data Structures and Algorithms" },
+                { name: "Operations Research and Optimization" },
+                { name: "Honors Linear Algebra" },
+                { name: "Honors Multivariable Calculus" }
+            ]
+        },
+        {
+            type: 'standard',
             id: "other",
             title: "Other",
             items: [
@@ -168,6 +178,69 @@ export const useExperiencesModel = () => {
                 },
             ],
         },
+        /*
+        {
+            type: 'skills',
+            id: "skills",
+            title: "Skills",
+            groups: [
+                {
+                    category: "Languages",
+                    skills: [
+                        { name: "Java" },
+                        { name: "Python" },
+                        { name: "TypeScript" },
+                        { name: "JavaScript" },
+                        { name: "Go" },
+                        { name: "C" },
+                        { name: "C++" },
+                        { name: "C#" },
+                        { name: "Haskell" }
+                    ]
+                },
+                {
+                    category: "Frameworks",
+                    skills: [
+                        { name: "Spring" },
+                        { name: "Spring Boot" },
+                        { name: "Flask" },
+                        { name: "React.js" },
+                        { name: "React Native" },
+                        { name: "Vue.js" },
+                        { name: "Next.js" },
+                        { name: "Node.js" },
+                        { name: "Express.js" },
+                        { name: "Tailwind" }
+                    ]
+                },
+                {
+                    category: "Technologies",
+                    skills: [
+                        { name: "SQL" },
+                        { name: "MongoDB" },
+                        { name: "PostgreSQL" },
+                        { name: "MySQL" },
+                        { name: "MariaDB" },
+                        { name: "Hibernate" },
+                        { name: "Supabase" },
+                        { name: "Redis" },
+                        { name: "Amazon Web Services (AWS)" },
+                        { name: "Apache Kafka" },
+                        { name: "Apache Airflow" },
+                        { name: "RabbitMQ" },
+                        { name: "Apollo Server/Client" },
+                        { name: "GraphQL" },
+                        { name: "Docker" },
+                        { name: "Terraform" },
+                        { name: "Nginx" },
+                        { name: "Git/Github" },
+                        { name: "Jenkins" },
+                        { name: "Linux" }
+                    ]
+                }
+            ]
+        }
+        */
     ];
 
     return {
