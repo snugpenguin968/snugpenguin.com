@@ -19,7 +19,7 @@ type HeroViewProps = {
 export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }: HeroViewProps) => {
     return (
         <>
-            <section className="min-h-screen relative overflow-hidden flex flex-col justify-center pt-32 pb-32">
+            <section className="min-h-screen relative flex flex-col justify-center pt-32 pb-64">
                 <div className="max-w-[1400px] mx-auto w-full px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center relative z-10">
 
                     {/* Left Column: Title */}
@@ -40,7 +40,7 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }
                         </div>
 
                         {/* Reflection Placeholder */}
-                        <div className="absolute top-[75%] w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none">
+                        <div className="absolute top-[60%] w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border-2 border-white/10 rounded-3xl flex items-center justify-center text-white/20 transform rotate-45 scale-y-[-1] opacity-30 mask-image-gradient pointer-events-none -z-10">
                             Reflection
                         </div>
                     </div>
@@ -52,7 +52,7 @@ export const HeroView = ({ title, subtitle, scrollText, about, experiencesLink }
             </section>
 
             {/* About Section Integrated */}
-            <section id="about" className="py-20 px-5 md:px-10 max-w-6xl mx-auto">
+            <section id="about" className="py-20 px-5 md:px-10 max-w-6xl mx-auto relative z-10">
                 <div className="flex flex-col md:flex-row gap-10 items-center">
                     <div className="w-full md:w-1/2 aspect-square bg-white/10 rounded-2xl overflow-hidden relative border-2 border-white/20">
                         <div className="w-full h-full flex items-center justify-center text-white/30">
