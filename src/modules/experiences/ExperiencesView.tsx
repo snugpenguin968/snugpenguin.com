@@ -1,14 +1,61 @@
 import React from "react";
-import { ExperienceSegment } from "./ExperiencesTypes";
-import { ExperienceCard } from "./ExperienceCard";
-import { ExperienceTags } from "./ExperienceTags";
+
+type ExperienceItem = {
+    id: string;
+    year: string;
+    title: string;
+    description: string;
+    tags: string[];
+    image?: string;
+    link?: string;
+};
+
+type CourseItem = {
+    name: string;
+    link?: string;
+};
+
+type SkillItem = {
+    name: string;
+    link?: string;
+};
+
+type SkillGroup = {
+    category: string;
+    skills: SkillItem[];
+};
+
+type StandardExperienceSegment = {
+    type: 'standard';
+    id: string;
+    title: string;
+    items: ExperienceItem[];
+};
+
+type CourseworkSegment = {
+    type: 'coursework';
+    id: string;
+    title: string;
+    courses: CourseItem[];
+};
+
+type SkillsSegment = {
+    type: 'skills';
+    id: string;
+    title: string;
+    groups: SkillGroup[];
+};
+
+type ExperienceSegment = StandardExperienceSegment | CourseworkSegment | SkillsSegment;
 
 type ExperiencesViewProps = {
     title: string;
     segments: ExperienceSegment[];
+    renderCard: (item: ExperienceItem) => React.ReactNode;
+    renderTags: (items: { name: string; link?: string }[]) => React.ReactNode;
 };
 
-export const ExperiencesView = ({ title, segments }: ExperiencesViewProps) => {
+export const ExperiencesView = ({ title, segments, renderCard, renderTags }: ExperiencesViewProps) => {
     return (
         <div className="min-h-screen pt-32 pb-20 px-5 md:px-10"
             style={{
@@ -31,7 +78,7 @@ export const ExperiencesView = ({ title, segments }: ExperiencesViewProps) => {
                                         </h2>
                                         <div className="h-px bg-white/10 flex-1" />
                                     </div>
-                                    <ExperienceTags items={segment.courses} />
+                                    {renderTags(segment.courses)}
                                 </section>
                             );
                         }
@@ -52,7 +99,7 @@ export const ExperiencesView = ({ title, segments }: ExperiencesViewProps) => {
                                                 <h3 className="font-goldman text-2xl text-white/60 pl-2 border-l-2 border-ice-light/30">
                                                     {group.category}
                                                 </h3>
-                                                <ExperienceTags items={group.skills} />
+                                                {renderTags(group.skills)}
                                             </div>
                                         ))}
                                     </div>
@@ -60,7 +107,6 @@ export const ExperiencesView = ({ title, segments }: ExperiencesViewProps) => {
                             );
                         }
 
-                        // Standard segment
                         return (
                             <section key={segment.id} className="space-y-10">
                                 <div className="flex items-center gap-4">
@@ -72,7 +118,9 @@ export const ExperiencesView = ({ title, segments }: ExperiencesViewProps) => {
 
                                 <div className="grid grid-cols-1 gap-10">
                                     {segment.items.map((item) => (
-                                        <ExperienceCard key={item.id} item={item} />
+                                        <React.Fragment key={item.id}>
+                                            {renderCard(item)}
+                                        </React.Fragment>
                                     ))}
                                 </div>
                             </section>

@@ -1,5 +1,14 @@
 import React from "react";
-import { ExperienceItem } from "./ExperiencesTypes";
+
+type ExperienceItem = {
+    id: string;
+    year: string;
+    title: string;
+    description: string;
+    tags: string[];
+    image?: string;
+    link?: string;
+};
 
 export const ExperienceCard = ({ item }: { item: ExperienceItem }) => {
     if (item.link) {

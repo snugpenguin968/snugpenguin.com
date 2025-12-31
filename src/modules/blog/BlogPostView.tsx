@@ -1,7 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { ContentBlock } from "./BlogData";
+
+type ContentBlock =
+    | { type: 'paragraph'; content: string }
+    | { type: 'heading'; level: 1 | 2 | 3; content: string }
+    | { type: 'image'; src: string; caption?: string }
+    | { type: 'video'; src: string; caption?: string }
+    | { type: 'code'; language: string; content: string };
 
 type BlogPostViewProps = {
     title: string;
