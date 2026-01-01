@@ -22,7 +22,7 @@ export const HeaderView = ({ logoText, links }: HeaderViewProps) => {
         >
             <div className="w-full h-16 flex items-center justify-between shrink-0">
                 <Link href="/" className="font-goldman text-xl font-bold text-text-white flex items-center gap-2.5 transition-opacity hover:opacity-80">
-                    <img src="/logo.png" alt="Snug Penguin" className="w-8 h-8 object-contain" />
+                    <img src="/images/branding/logo.png" alt="Snug Penguin" className="w-8 h-8 object-contain" />
                     <span>{logoText}</span>
                 </Link>
 

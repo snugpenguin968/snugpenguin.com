@@ -10,7 +10,7 @@ export const useHeroModel = () => {
                 "I'm broadly interested in backend development, high-performance infrastructure, and systems.",
                 "I also love food 😋.",
             ],
-            photoSrc: "/me.png",
+            photoSrc: "/images/hero/me.png",
         },
         experiencesLink: {
             label: "Check out my experiences",

@@ -13,7 +13,7 @@ export const useExperiencesModel = () => {
                     title: "Software Engineer Intern @ Wealthfront",
                     description: "Post-trade data replication system for brokerage infrastructure.",
                     tags: ["JAVA", "SQL", "MariaDB", "Hibernate", "Guice", "Apache Airflow", "Message Queues", "System Design"],
-                    image: "/wealthfront.png",
+                    image: "/images/experiences/wealthfront.png",
                 },
                 {
                     id: "job2",
@@ -21,7 +21,7 @@ export const useExperiencesModel = () => {
                     title: "Software Engineer Intern @ General Atomics",
                     description: "Simulation and visualization for drones and guided projectiles. ",
                     tags: ["C++", "C#", ".NET", "Vue.js", "Node.js", "Express.js", "TypeScript"],
-                    image: "/general_atomics.jpg",
+                    image: "/images/experiences/general_atomics.jpg",
                 },
             ],
         },
@@ -36,7 +36,7 @@ export const useExperiencesModel = () => {
                     title: "Labshare",
                     description: "Inventory management and resource sharing for research labs.",
                     tags: ["Go", "AWS", "Microsoft Azure AI", "NGINX", "Docker", "CI/CD", "React Native", "Expo Go", "TypeScript"],
-                    image: "/labshare.png",
+                    image: "/images/experiences/labshare.png",
                 },
                 {
                     id: "proj2",
@@ -44,7 +44,7 @@ export const useExperiencesModel = () => {
                     title: "Rice Laundry Management System",
                     description: "Distributed timer to help students coordinate laundry trips.",
                     tags: ["Go", "PostgreSQL", "DynamoDB", "Amazon SNS", "Websockets", "Docker", "React Native", "Expo Go", "TypeScript"],
-                    image: "/rice.png",
+                    image: "/images/experiences/rice.png",
                 },
             ],
         },
@@ -59,7 +59,7 @@ export const useExperiencesModel = () => {
                     title: "Workshops @ Rice Datathon",
                     description: "Getting students excited about data science!",
                     tags: ["Data Science", "Machine Learning"],
-                    image: "/datathon.png",
+                    image: "/images/experiences/datathon.png",
                 },
                 {
                     id: "uni2",
@@ -67,7 +67,7 @@ export const useExperiencesModel = () => {
                     title: "COMP 382 TA",
                     description: "Teaching Assistant for Reasoning About Algorithms.",
                     tags: ["Algorithms", "Data Structures", "Proofs"],
-                    image: "/rice.png",
+                    image: "/images/experiences/rice.png",
                 },
                 {
                     id: "uni3",
@@ -75,7 +75,7 @@ export const useExperiencesModel = () => {
                     title: "Industry Outreach @ HackRice15",
                     description: "Logistics with sponsors, judges, mentors, and keynote speaker. ",
                     tags: ["Emailing", "Grocery Shopping"],
-                    image: "/hackrice.png",
+                    image: "/images/experiences/hackrice.png",
                 },
                 {
                     id: "uni4",
@@ -83,7 +83,7 @@ export const useExperiencesModel = () => {
                     title: "Tech Lead @ Texas Hearing Institute",
                     description: "Data warehouse project.",
                     tags: ["Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "ETL"],
-                    image: "/riceapps.png",
+                    image: "/images/experiences/riceapps.png",
                 },
                 {
                     id: "uni5",
@@ -91,7 +91,7 @@ export const useExperiencesModel = () => {
                     title: "Research Engineer @ Rice Wireless",
                     description: "Stress-testing framework for network interface cards.",
                     tags: ["C++", "C", "Linux", "DPDK", "Computer Networks"],
-                    image: "/ricewireless.jpg",
+                    image: "/images/experiences/ricewireless.jpg",
                 },
                 {
                     id: "uni6",
@@ -99,7 +99,7 @@ export const useExperiencesModel = () => {
                     title: "Software Engineer @ Texas Hearing Institute",
                     description: "Speech therapy app to help diagnose child hearing loss.",
                     tags: ["React Native", "TypeScript", "Supabase", "Agile"],
-                    image: "/riceapps.png",
+                    image: "/images/experiences/riceapps.png",
                 },
                 {
                     id: "uni7",
@@ -107,7 +107,7 @@ export const useExperiencesModel = () => {
                     title: "COMP 140 TA",
                     description: "Teaching Assistant for Rice's introductory CS class.",
                     tags: ["Recipes"],
-                    image: "/rice.png",
+                    image: "/images/experiences/rice.png",
                 },
                 {
                     id: "uni8",
@@ -115,7 +115,7 @@ export const useExperiencesModel = () => {
                     title: "Software Engineer @ Houston Museum of Natural Science",
                     description: "Mobile app companion for the Cockrell Butterfly Center.",
                     tags: ["React Native", "Expo Go", "TypeScript", "GraphQL", "Apollo", "MongoDB", "Agile"],
-                    image: "/riceapps.png",
+                    image: "/images/experiences/riceapps.png",
                 },
             ],
         },
@@ -153,7 +153,7 @@ export const useExperiencesModel = () => {
                     title: "CalHacks12",
                     description: "Basically a vacation.",
                     tags: ["Vibes"],
-                    image: "/calhacks.png",
+                    image: "/images/experiences/calhacks.png",
                 },
                 {
                     id: "other2",
@@ -161,7 +161,7 @@ export const useExperiencesModel = () => {
                     title: "YC Summer Meetup",
                     description: "Met some YC partners, founders, and cool people interning in the area.",
                     tags: ["Free Food", "Free merch"],
-                    image: "/yc.png",
+                    image: "/images/experiences/yc.png",
                 },
                 {
                     id: "other3",
@@ -169,7 +169,7 @@ export const useExperiencesModel = () => {
                     title: "Greylock Tech Fair",
                     description: "Learned about some cool companies.",
                     tags: ["Free Food", "Free merch"],
-                    image: "/greylock.png",
+                    image: "/images/experiences/greylock.png",
                 },
                 {
                     id: "other4",
@@ -177,7 +177,7 @@ export const useExperiencesModel = () => {
                     title: "UC Berkeley AI Hackathon",
                     description: "Gave up and went hiking instead.",
                     tags: ["Photography"],
-                    image: "/aihackathon.png",
+                    image: "/images/experiences/aihackathon.png",
                 },
                 {
                     id: "other5",
@@ -185,7 +185,7 @@ export const useExperiencesModel = () => {
                     title: "Susquehanna International Group Technology Discovery Day",
                     description: "Went to Philly and learned about market making 😎.",
                     tags: ["Free Food", "Free merch"],
-                    image: "/sig.png",
+                    image: "/images/experiences/sig.png",
                 },
             ],
         },

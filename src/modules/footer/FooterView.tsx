@@ -83,7 +83,7 @@ export const FooterView = ({ contactTitle, github, email, beli, linkedin, copyri
 
                     <div className="flex items-center gap-4">
                         <div className="w-6 h-6 rounded-md overflow-hidden flex-shrink-0">
-                            <img src="/beli.jpg" alt="Beli" className="w-full h-full object-cover" />
+                            <img src="/images/branding/beli.jpg" alt="Beli" className="w-full h-full object-cover" />
                         </div>
                         <div>
                             <span className="text-sm opacity-70 mb-1 block">{beli.label}</span>
@@ -104,7 +104,7 @@ export const FooterView = ({ contactTitle, github, email, beli, linkedin, copyri
             </div>
 
             <div className="absolute bottom-0 right-0 w-[200px] md:w-[600px] z-0 pointer-events-none opacity-50">
-                <img src="/bottom.png" alt="Bottom Iceberg" className="w-full h-auto object-contain object-bottom" />
+                <img src="/images/hero/bottom.png" alt="Bottom Iceberg" className="w-full h-auto object-contain object-bottom" />
             </div>
         </footer>
     );
