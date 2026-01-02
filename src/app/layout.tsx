@@ -47,12 +47,15 @@ export default function RootLayout({
               url: "https://johntian.dev",
               image: "https://johntian.dev/favicon/android-chrome-512x512.png",
               sameAs: [
-                "https://github.com/snugpenguin",
-                "https://linkedin.com/in/john-tian",
-                "https://twitter.com/JohnTian_"
+                "https://github.com/snugpenguin968",
+                "https://www.linkedin.com/in/jt42/"
               ],
-              jobTitle: "Computer Science Student",
+              jobTitle: ["Software Engineer", "Computer Science Student"],
               worksFor: {
+                "@type": "Organization",
+                name: "Wealthfront"
+              },
+              affiliation: {
                 "@type": "Organization",
                 name: "Rice University"
               }
